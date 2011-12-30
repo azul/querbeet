@@ -34,3 +34,4 @@ gem 'jquery-rails'
 
 gem 'spree'
 
+gem 'spree_i18n', :git => 'https://github.com/spree/spree_i18n.git'
