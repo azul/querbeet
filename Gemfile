@@ -33,5 +33,5 @@ gem 'mongrel'
 
 gem 'spree'
 
-gem 'spree_i18n', :git => 'https://github.com/spree/spree_i18n.git'
+# gem 'spree_i18n', :git => 'https://github.com/spree/spree_i18n.git'
 gem 'spree_html_invoice', :git => 'git://github.com/dancinglightning/spree-html-invoice.git'
