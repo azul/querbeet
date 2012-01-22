@@ -5,7 +5,9 @@ gem 'rails', '3.1.2'
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+group :production do
+  gem 'mysql2'
+end
 
 gem 'json'
 
@@ -22,7 +24,10 @@ gem 'jquery-rails'
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
-gem 'mongrel'
+group :development do
+  gem 'mongrel'
+  gem 'sqlite3'
+end
 
 # Deploy with Capistrano
 # gem 'capistrano'
