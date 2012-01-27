@@ -1,15 +1,484 @@
-/*
- * This is a manifest file that'll automatically include all the stylesheets available in this directory
- * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
- * the top of the compiled file, but it's generally better to create a new file per style scope.
- *
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+     border: 0pt none;
+     font-family: inherit;
+     font-size: 100%;
+     font-style: inherit;
+     font-weight: inherit;
+     margin: 0pt;
+     outline: 0pt none;
+     padding: 0pt;
+     vertical-align: baseline;
+}
 
- *= require store/spree_core
- *= require store/spree_auth
- *= require store/spree_api
- *= require store/spree_promo
- *= require store/spree_dash
+:focus {
+     outline: 0pt none;
+}
 
- *= require_self
- *= require_tree .
-*/
+body {
+     background: none repeat scroll 0pt 0pt #B2BF6F;
+     color: black;
+     line-height: 1em;
+}
+
+ol, ul {
+     list-style: none outside none;
+}
+
+table {
+     border-collapse: separate;
+     border-spacing: 0pt;
+     vertical-align: middle;
+}
+
+caption, th, td {
+     font-weight: normal;
+     text-align: left;
+     vertical-align: middle;
+}
+
+q, blockquote {
+     quotes: "" "";
+}
+
+q:before {
+     content: "";
+}
+
+q:after {
+     content: "";
+}
+
+blockquote:before {
+     content: "";
+}
+
+blockquote:after {
+     content: "";
+}
+
+img a {
+     border: medium none;
+}
+
+hr {
+     background: none repeat scroll 0% 0% #DDDDDD;
+     border: medium none;
+     clear: both;
+     color: #DDDDDD;
+     float: none;
+     height: 0.1em;
+     margin: 0pt 0pt 1.45em;
+     width: 100%;
+}
+
+hr.space {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     border: medium none;
+     clear: both;
+     color: #FFFFFF;
+     float: none;
+     height: 0.1em;
+     margin: 0pt 0pt 1.45em;
+     width: 100%;
+}
+
+body {
+     color: #333333;
+     font-family: Georgia,Times New Roman,serif;
+     font-size: 90%;
+     line-height: 1.5;
+     vertical-align: middle;
+     width: 100%;
+}
+
+h1 {
+     font-size: 3em;
+     font-weight: normal;
+     line-height: 1;
+     margin-bottom: 0.5em;
+}
+
+h1 img {
+     margin: 0pt;
+}
+
+h2 {
+     font-size: 2em;
+     font-weight: normal;
+     margin-bottom: 0.75em;
+}
+
+h3 {
+     font-size: 1.4em;
+     font-weight: normal;
+     line-height: 1;
+     margin-bottom: 1em;
+}
+
+h4 {
+     font-size: 1.2em;
+     font-weight: normal;
+     line-height: 1.25;
+     margin-bottom: 1.25em;
+}
+
+h5 {
+     font-size: 1em;
+     font-weight: bold;
+     margin-bottom: 1.5em;
+}
+
+h6 {
+     font-size: 1em;
+     font-weight: bold;
+}
+
+h2 img {
+     margin: 0pt;
+}
+
+h3 img {
+     margin: 0pt;
+}
+
+h4 img {
+     margin: 0pt;
+}
+
+h5 img {
+     margin: 0pt;
+}
+
+h6 img {
+     margin: 0pt;
+}
+
+p {
+     margin: 0pt 0pt 1.5em;
+}
+
+p img.left {
+     display: inline;
+     float: left;
+     margin: 1.5em 1.5em 1.5em 0pt;
+     padding: 0pt;
+}
+
+p img.right {
+     display: inline;
+     float: right;
+     margin: 1.5em 0pt 1.5em 1.5em;
+     padding: 0pt;
+}
+
+a:link, a:visited, a:active, a:focus {
+     color: #84BF41;
+     text-decoration: underline;
+}
+
+a:hover {
+     color: #D72229;
+}
+
+blockquote {
+     color: #666666;
+     font-style: italic;
+     margin: 1.5em;
+}
+
+strong {
+     font-weight: bold;
+}
+
+em {
+     font-style: italic;
+}
+
+dfn {
+     font-style: italic;
+     font-weight: bold;
+}
+
+sup, sub {
+     line-height: 0;
+}
+
+abbr, acronym {
+     border-bottom: 1px dotted #666666;
+}
+
+address {
+     font-style: italic;
+     margin: 0pt 0pt 1.5em;
+}
+
+del {
+     color: #666666;
+}
+
+pre {
+     margin: 1.5em 0pt;
+     white-space: pre;
+}
+
+pre, code, tt {
+     font: 1em/1.5 'andale mono','lucida console',monospace;
+}
+
+li ul {
+     margin: 0pt 1.5em;
+}
+
+li ol {
+     margin: 0pt 1.5em;
+}
+
+ul {
+     list-style-type: disc;
+     margin: 0pt 1.5em 1.5em;
+}
+
+ol {
+     list-style-type: decimal;
+     margin: 0pt 1.5em 1.5em;
+}
+
+dl {
+     margin: 0pt 0pt 1.5em;
+}
+
+dl dt {
+     font-weight: bold;
+}
+
+dd {
+     margin-left: 1.5em;
+}
+
+table {
+     margin-bottom: 1.4em;
+     width: 100%;
+}
+
+th {
+     font-weight: bold;
+}
+
+thead th {
+     background: none repeat scroll 0% 0% #C3D9FF;
+}
+
+th, td, caption {
+     padding: 4px 10px 4px 5px;
+}
+
+tr.even td {
+     background: none repeat scroll 0% 0% #E5ECF9;
+}
+
+tfoot {
+     font-style: italic;
+}
+
+caption {
+     background: none repeat scroll 0% 0% #EEEEEE;
+}
+
+body {
+     padding: 0pt 1em;
+}
+
+div#superwrapper {
+     background-color: #FFFFFF;
+     margin: 20px auto;
+     padding: 0pt 0pt 1px 20px;
+     width: 960px;
+}
+
+div#header {
+     margin: 0pt 0pt 30px;
+}
+
+div#header div#logo {
+     border-bottom: 1px solid #000000;
+     padding-bottom: 32px;
+     width: 940px;
+}
+
+div#header ul#nav-bar {
+     clear: both;
+     float: right;
+     font-size: 14px;
+     line-height: 50px;
+     list-style: none outside none;
+     margin: 0pt 20px 0pt 0pt;
+}
+
+div#header ul#nav-bar li {
+     display: table-cell;
+     padding: 0pt 0pt 0pt 25px;
+     vertical-align: middle;
+}
+
+div#sidebar {
+     float: left;
+     height: 100%;
+     margin-bottom: 30px;
+     margin-right: 5%;
+     max-width: 30%;
+     width: 282px;
+}
+
+#sidebar h3.taxonomy-root {
+     line-height: 24px;
+     margin: 5px 0pt 8px;
+}
+
+div#wrapper {
+     width: 940px;
+}
+
+div#content {
+    
+}
+
+body.two-col div#content {
+     float: left;
+     margin-bottom: 30px;
+     max-width: 65%;
+     width: 610px;
+}
+
+div#footer {
+     border-top: 1px solid #000000;
+     clear: both;
+     font-size: 12px;
+     font-style: italic;
+     padding: 17px 0pt 0pt;
+     width: 940px;
+}
+
+ul#products {
+     list-style: none outside none;
+     margin: 0pt auto;
+}
+
+ul#products li {
+     float: left;
+     height: 150px;
+     padding: 0pt 10px 20px;
+     text-align: center;
+     width: 200px;
+}
+
+ul#products li img {
+     display: block;
+     margin: auto;
+}
+
+button, a.button, input.button {
+     color: inherit;
+     cursor: pointer;
+     display: inline-block;
+     font-size: 1em;
+     height: auto;
+     margin: 0px;
+     padding: 3px;
+     text-decoration: none;
+     width: auto;
+}
+
+button img, a.button img, input.button img {
+     margin-right: 5px;
+     vertical-align: middle;
+}
+
+input#keywords {
+     height: 9px;
+     margin-left: 10px;
+}
+
+div#subtotal {
+     float: right;
+}
+
+div#product-variants ul li label {
+     cursor: pointer;
+}
+
+div#product-images {
+     width: 50%;
+}
+
+div#product-images, div#main-image, div#cart-form {
+     float: left;
+}
+
+div#product-description {
+     clear: both;
+     float: none;
+}
+
+ul.thumbnails, #breadcrumbs ul {
+     list-style: none outside none;
+     margin: 0pt;
+     padding: 0pt;
+}
+
+ul.thumbnails li {
+     border: 1px solid silver;
+     display: inline-block;
+     float: none;
+     height: 48px;
+     margin-bottom: 4px;
+     margin-right: 4px;
+     min-height: 48px;
+     padding: 0pt;
+     position: relative;
+     width: 48px;
+}
+
+#breadcrumbs ul li {
+     display: inline-block;
+}
+
+dl.table-display dt {
+     float: left;
+     min-width: 200px;
+     padding: 3px 5px;
+}
+
+dl.table-display dd {
+     padding: 3px;
+}
+
+dl#product-price dt {
+     float: left;
+     font-size: 14pt;
+     padding: 0pt 10px 0pt 0pt;
+}
+
+dl#product-price dd {
+     font-size: 14pt;
+}
+
+.even {
+     background: none repeat scroll 0% 0% #EEEEEE;
+}
+
+.odd {
+     background: none repeat scroll 0% 0% #DDDDDD;
+}
+
+.hidden {
+     display: none;
+}
+
+div.inner input[type="text"], div.inner select {
+     width: 90%;
+}
+
+span.req {
+     color: red;
+     padding-left: 0.25em;
+}
