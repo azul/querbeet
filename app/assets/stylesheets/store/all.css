@@ -381,6 +381,7 @@ ul#products li img {
      background: none repeat scroll 0% 0% #FFFFFF;
      border: 1px solid #DDDDDD;
      display: block;
+     width: 100px;
      float: right;
      margin: auto;
      padding: 4px;
