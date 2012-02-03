@@ -92,7 +92,7 @@ body {
 }
 
 h1 {
-     font-size: 3em;
+     font-size: 2em;
      font-weight: normal;
      line-height: 1;
      margin-bottom: 0.5em;
@@ -222,7 +222,7 @@ pre {
 }
 
 pre, code, tt {
-     font: 1em/1.5 'andale mono','lucida console',monospace;
+     font: 1em/1.5 "andale mono","lucida console",monospace;
 }
 
 li ul {
@@ -338,10 +338,6 @@ div#wrapper {
      width: 940px;
 }
 
-div#content {
-    
-}
-
 body.two-col div#content {
      float: left;
      margin-bottom: 30px;
@@ -364,25 +360,104 @@ ul#products {
 }
 
 ul#products li {
+     background: none repeat scroll 0pt 0pt #FCFFF3;
+     border: 1px solid #AADDAA;
      float: left;
-     height: 150px;
-     padding: 0pt 10px 20px;
-     text-align: center;
-     width: 200px;
+     margin: 10px 30px 20px 10px;
+     min-height: 110px;
+     padding: 10px;
+     width: 240px;
+}
+
+ul#products li a.info {
+     float: left;
+     font-size: 19px;
+     line-height: 18px;
+     text-decoration: none;
+     width: 125px;
 }
 
 ul#products li img {
+     background: none repeat scroll 0% 0% #FFFFFF;
+     border: 1px solid #DDDDDD;
      display: block;
+     float: right;
      margin: auto;
+     padding: 4px;
+}
+
+ul#products li span.price {
+     float: left;
+     font-size: 19px;
+     width: 125px;
+}
+
+div#product-images {
+     margin: 0pt;
+}
+
+div#product-images div#main-image {
+     margin: 5px 20px 20px 2px;
+     width: 240px;
+}
+
+div#product-description {
+     float: left;
+     font-size: 16px;
+     width: 420px;
+}
+
+div#cart-form {
+     background: none repeat scroll 0% 0% #FCFFF3;
+     border: 1px solid #AADDAA;
+     float: right;
+     padding: 10px 0pt 10px 10px;
+     width: 225px;
+}
+
+div#cart-form div#add-to-cart-button {
+     background: none repeat scroll 0% 0% #FCFFF3;
+     height: 30px;
+     width: 175px;
+}
+
+div#cart-form input {
+     font-size: 14px;
+     height: 20px;
+     padding-bottom: 4px;
+     width: 40px;
+}
+
+div#taxon-crumbs {
+     clear: both;
+     float: left;
+     margin-top: 35px;
+}
+
+.pagination {
+     border-top: 1px solid #999999;
+     font-size: 16px;
+     padding: 4px 0pt 0pt;
+     text-align: center;
+}
+
+nav .next, nav .last {
+     float: right;
+     margin: 0pt 0pt 0pt 15px;
+}
+
+nav .first, nav .prev {
+     float: left;
+     margin: 0pt 15px 0pt 0pt;
 }
 
 button, a.button, input.button {
      color: inherit;
      cursor: pointer;
      display: inline-block;
-     font-size: 1em;
+     font-size: 13px;
      height: auto;
-     margin: 0px;
+     margin: 0pt;
      padding: 3px;
      text-decoration: none;
      width: auto;
@@ -391,6 +466,10 @@ button, a.button, input.button {
 button img, a.button img, input.button img {
      margin-right: 5px;
      vertical-align: middle;
+}
+
+p a.continue {
+     text-decoration: underline;
 }
 
 input#keywords {
@@ -407,16 +486,15 @@ div#product-variants ul li label {
 }
 
 div#product-images {
-     width: 50%;
-}
-
-div#product-images, div#main-image, div#cart-form {
      float: left;
 }
 
+div#product-images, div#main-image, div#cart-form {
+    
+}
+
 div#product-description {
-     clear: both;
-     float: none;
+    
 }
 
 ul.thumbnails, #breadcrumbs ul {
