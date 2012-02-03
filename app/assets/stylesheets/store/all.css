@@ -308,7 +308,7 @@ div#header div#logo {
 div#header ul#nav-bar {
      clear: both;
      float: right;
-     font-size: 14px;
+     font-size: 13px;
      line-height: 50px;
      list-style: none outside none;
      margin: 0pt 20px 0pt 0pt;
@@ -381,10 +381,10 @@ ul#products li img {
      background: none repeat scroll 0% 0% #FFFFFF;
      border: 1px solid #DDDDDD;
      display: block;
-     width: 100px;
      float: right;
      margin: auto;
      padding: 4px;
+     width: 100px;
 }
 
 ul#products li span.price {
@@ -435,6 +435,16 @@ div#taxon-crumbs {
      margin-top: 35px;
 }
 
+select#taxon {
+     font-size: 12px;
+     width: 150px;
+}
+
+li#search-bar input {
+     font-size: 12px;
+     min-height: 11px;
+}
+
 .pagination {
      border-top: 1px solid #999999;
      font-size: 16px;
@@ -474,8 +484,10 @@ p a.continue {
 }
 
 input#keywords {
-     height: 9px;
+     font-size: 12px;
+     height: 10px;
      margin-left: 10px;
+     width: 160px;
 }
 
 div#subtotal {
@@ -488,14 +500,6 @@ div#product-variants ul li label {
 
 div#product-images {
      float: left;
-}
-
-div#product-images, div#main-image, div#cart-form {
-    
-}
-
-div#product-description {
-    
 }
 
 ul.thumbnails, #breadcrumbs ul {
