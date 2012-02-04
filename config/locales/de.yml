@@ -1258,7 +1258,7 @@ de:
   variants: Varianten
   vat: "USt"
   version: Version
-  view_shipping_options: "View shipping options"
+  view_shipping_options: "Versandoptionen anzeigen"
   void: Void
   website: Webseite
   weight: Gewicht
@@ -1269,7 +1269,7 @@ de:
   width: Breite
   year: "Jahr"
   you_have_been_logged_out: "Sie haben sich ausgeloggt"
-  you_have_no_orders_yet: "You have no orders yet."
+  you_have_no_orders_yet: "Sie haben noch keine Bestellungen aufgegeben."
   your_cart_is_empty: "Ihr Warenkorb ist leer"
   zip: PLZ
   zone: Zone
