@@ -1,12 +1,5 @@
 GIT
-  remote: git://github.com/dancinglightning/spree-html-invoice.git
-  revision: 0a2b460d51a2a04f623f94d299a3a25aa5f0cb10
-  specs:
-    spree_html_invoice (0.0.1)
-      spree_core (>= 0.30.0)
-
-GIT
-  remote: https://github.com/azul/spree.git
+  remote: git://github.com/azul/spree.git
   revision: a679deb513c5a125072bf8de8501c3b3f6a7854f
   branch: 0-70-stable
   specs:
@@ -47,6 +40,13 @@ GIT
       spree_core (= 0.70.4.beta)
     spree_sample (0.70.4.beta)
       spree_core (= 0.70.4.beta)
+
+GIT
+  remote: git://github.com/dancinglightning/spree-html-invoice.git
+  revision: 0a2b460d51a2a04f623f94d299a3a25aa5f0cb10
+  specs:
+    spree_html_invoice (0.0.1)
+      spree_core (>= 0.30.0)
 
 GEM
   remote: http://rubygems.org/
