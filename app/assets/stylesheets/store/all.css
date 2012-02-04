@@ -265,7 +265,7 @@ th {
 }
 
 thead th {
-     background: none repeat scroll 0% 0% #C3D9FF;
+     background: none repeat scroll 0pt 0pt #FCFFF3;
 }
 
 th, td, caption {
@@ -427,6 +427,74 @@ div#cart-form input {
      height: 20px;
      padding-bottom: 4px;
      width: 40px;
+}
+
+tbody#line_items tr td > img {
+     background: none repeat scroll 0pt 0pt #FFFFFF;
+     border: 1px solid #DDDDDD;
+     display: block;
+     float: right;
+     margin: auto;
+     padding: 4px;
+     width: 100px;
+}
+
+tbody#line_items tr td {
+     min-width: 60px;
+     padding: 30px 10px 0pt;
+     vertical-align: top;
+}
+
+tbody#line_items tr td h4 {
+     margin: 3px 0pt;
+}
+
+div#empty-cart {
+     margin: 30px 0pt 0pt 5px;
+}
+
+div#empty-cart p > input.button {
+     margin: 0pt 10px 0pt 5px;
+}
+
+div#empty-cart p > a {
+     margin: 0pt 10px;
+}
+
+div#subtotal div.links {
+     margin-bottom: 40px;
+}
+
+div#subtotal h3 {
+     border-bottom: 4px double #333333;
+     margin: -10px 0pt 35px;
+     padding: 10px 15px 6px;
+}
+
+div#subtotal div.links button#update-button {
+     background: none repeat scroll 0pt 0pt #FFFFFF;
+     border: medium none;
+     font-family: Georgia,Times New Roman,serif;
+     font-size: 15px;
+}
+
+div#subtotal div.links button#update-button:hover {
+     text-decoration: underline;
+}
+
+div#subtotal div.links a#checkout-link {
+     background: none repeat scroll 0pt 0pt #FCFFF3;
+     border: 1px solid #DDDDDD;
+     font-size: 15px;
+     font-weight: bold;
+     margin: 0pt 10px 0pt 15px;
+     padding: 5px 17px 5px 10px;
+}
+
+div#subtotal div.links a#checkout-link:hover {
+     background: none repeat scroll 0pt 0pt #B2BF6F;
+     border: 1px solid #333333;
+     color: #FFFFFF;
 }
 
 div#taxon-crumbs {
