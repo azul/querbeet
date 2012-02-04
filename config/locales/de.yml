@@ -1280,3 +1280,7 @@ de:
     date_picker:
       format: 'd-m-y'
       divider: '.'
+  will_paginate:
+    next_label: Weiter →
+    page_gap: ! '&hellip;'
+    previous_label: ← Vorige
