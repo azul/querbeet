@@ -513,6 +513,97 @@ li#search-bar input {
      min-height: 11px;
 }
 
+div#checkout-summary {
+     border: 1px solid #CCCCCC;
+     float: right;
+     margin: -100px 0pt 30px;
+     padding: 10px;
+     width: 30%;
+}
+
+ol.progress-steps {
+     font-size: 17px;
+     margin-bottom: 50px;
+}
+
+ol.progress-steps li {
+     float: left;
+     margin-right: 50px;
+}
+
+ol.progress-steps li.current-first, ol.progress-steps li.current {
+     font-weight: bold;
+}
+
+fieldset#billing {
+     clear: both;
+     float: left;
+     margin: 0pt 5% 0pt 0pt;
+     width: 40%;
+}
+
+fieldset#billing legend {
+     font-size: 18px;
+     margin-bottom: 44px;
+}
+
+fieldset#shipping {
+     float: left;
+     margin: 0pt 5% 0pt 0pt;
+     width: 40%;
+}
+
+fieldset legend {
+     font-size: 18px;
+     margin-bottom: 8px;
+}
+
+fieldset#payment ul#payment-methods {
+     list-style-type: none;
+}
+
+div.form-buttons {
+     margin: 0pt 0pt 30px;
+}
+
+p.field {
+     clear: both;
+}
+
+p.field label.error {
+     color: #996666;
+     float: left;
+     font-style: italic;
+     margin-bottom: 15px;
+}
+
+div.notice {
+     border: 1px solid #AADDAA;
+     font-weight: bold;
+     margin: 10px 30px 20px 10px;
+     padding: 10px;
+     text-align: center;
+     width: 542px;
+}
+
+div#registration div#account {
+     float: left;
+     margin: 0pt 5% 30px 0pt;
+     width: 40%;
+}
+
+div#registration div#guest_checkout {
+     border: 1px solid #84BF41;
+     float: right;
+     margin: 0pt 5% 0pt 0pt;
+     padding: 10px;
+     width: 40%;
+}
+
+div#registration h2 {
+     font-size: 20px;
+}
+
 .pagination {
      border-top: 1px solid #999999;
      font-size: 16px;
