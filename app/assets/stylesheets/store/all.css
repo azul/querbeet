@@ -326,12 +326,38 @@ div#sidebar {
      margin-bottom: 30px;
      margin-right: 5%;
      max-width: 30%;
-     width: 282px;
+     width: 270px;
 }
 
 #sidebar h3.taxonomy-root {
      line-height: 24px;
-     margin: 5px 0pt 8px;
+     margin: 5px 0pt 6px;
+}
+
+#sidebar h3.taxonomy-root a {
+     color: #333333;
+     font-family: Helvetica,Verdana,Arial,serif;
+     text-decoration: none;
+}
+
+#sidebar h3.taxonomy-root a:hover {
+     color: #D72229;
+     text-decoration: none;
+}
+
+ul.taxons-list {
+     list-style-image: url("/assets/store/list_icon.gif");
+}
+
+ul.taxons-list li a {
+     font-weight: bold;
+     text-decoration: none;
+}
+
+ul.taxons-list li {
+     font-size: 16px;
+     line-height: 18px;
+     padding-bottom: 8px;
 }
 
 div#wrapper {
@@ -383,6 +409,7 @@ ul#products li img {
      display: block;
      float: right;
      margin: auto;
+     max-height: 100px;
      padding: 4px;
      width: 100px;
 }
