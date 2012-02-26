@@ -88,7 +88,6 @@ body {
      font-size: 90%;
      line-height: 1.5;
      vertical-align: middle;
-     width: 100%;
 }
 
 h1 {
@@ -109,7 +108,7 @@ h2 {
 }
 
 h3 {
-     font-size: 1.4em;
+     font-size: 18px;
      font-weight: normal;
      line-height: 1;
      margin-bottom: 1em;
@@ -234,8 +233,7 @@ li ol {
 }
 
 ul {
-     list-style-type: disc;
-     margin: 0pt 1.5em 1.5em;
+     list-style-image: url("/assets/store/list_icon.gif");
 }
 
 ol {
@@ -296,12 +294,10 @@ div#superwrapper {
 }
 
 div#header {
-     margin: 0pt 0pt 30px;
+     margin: 0px;
 }
 
 div#header div#logo {
-     border-bottom: 1px solid #000000;
-     padding-bottom: 32px;
      width: 940px;
 }
 
@@ -320,18 +316,48 @@ div#header ul#nav-bar li {
      vertical-align: middle;
 }
 
+#header div.menu-header {
+     font-family: Verdana,Arial,Helvetica,sans-serif;
+     font-size: 15px;
+}
+
+#header div.menu-header ul {
+     list-style: none outside none;
+     margin: 0pt 0pt 0pt 20px;
+}
+
+#header .menu-header li {
+     float: left;
+     margin-right: 15px;
+     position: relative;
+}
+
+#header ul li.current_page_item > a, #header ul li.current-menu-ancestor > a, #header ul li.current-menu-item > a, #header ul li.current-menu-parent > a {
+     color: #006436;
+}
+
+#header a {
+     color: #000000;
+     display: block;
+     line-height: 38px;
+     text-decoration: none;
+}
+
 div#sidebar {
      float: left;
      height: 100%;
-     margin-bottom: 30px;
-     margin-right: 5%;
+     margin: 0pt 30px 30px 20px;
      max-width: 30%;
-     width: 270px;
+     width: 250px;
+}
+
+#sidebar div.advice {
+     margin: 10px 0pt 40px;
 }
 
 #sidebar h3.taxonomy-root {
      line-height: 24px;
-     margin: 5px 0pt 6px;
+     margin: 15px 0pt 6px;
 }
 
 #sidebar h3.taxonomy-root a {
@@ -345,30 +371,41 @@ div#sidebar {
      text-decoration: none;
 }
 
-ul.taxons-list {
-     list-style-image: url("/assets/store/list_icon.gif");
+div#taxonomies {
+     margin: 0pt 0pt 40px;
+     padding: 0pt 0pt 5px;
 }
 
-ul.taxons-list li a {
-     font-weight: bold;
+ul.taxons-list {
+     list-style-image: url("/assets/store/list_icon.gif");
+     padding-left: 16px;
+}
+
+ul.links a {
+     color: #333333;
+}
+
+ul.taxons-list li a, ul.links li a {
      text-decoration: none;
 }
 
-ul.taxons-list li {
+ul.taxons-list li, ul.links li {
      font-size: 16px;
      line-height: 18px;
      padding-bottom: 8px;
 }
 
 div#wrapper {
+     border-top: 1px solid #000000;
+     clear: both;
+     padding-top: 25px;
      width: 940px;
 }
 
 body.two-col div#content {
      float: left;
      margin-bottom: 30px;
-     max-width: 65%;
-     width: 610px;
+     width: 640px;
 }
 
 div#footer {
@@ -386,13 +423,13 @@ ul#products {
 }
 
 ul#products li {
-     background: none repeat scroll 0pt 0pt #FCFFF3;
+     background: none repeat scroll 0pt 0pt #FEFFF7;
      border: 1px solid #AADDAA;
      float: left;
-     margin: 10px 30px 20px 10px;
+     margin: 10px 20px 20px 5px;
      min-height: 110px;
-     padding: 10px;
-     width: 240px;
+     padding: 8px;
+     width: 275px;
 }
 
 ul#products li a.info {
@@ -400,7 +437,7 @@ ul#products li a.info {
      font-size: 19px;
      line-height: 18px;
      text-decoration: none;
-     width: 125px;
+     width: 160px;
 }
 
 ul#products li img {
@@ -433,6 +470,10 @@ div#product-description {
      float: left;
      font-size: 16px;
      width: 420px;
+}
+
+div#products {
+    
 }
 
 div#cart-form {
