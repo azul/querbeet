@@ -104,7 +104,6 @@ h1 img {
 h2 {
      font-size: 2em;
      font-weight: normal;
-     margin-bottom: 0.75em;
 }
 
 h3 {
@@ -352,7 +351,7 @@ div#sidebar {
 }
 
 #sidebar div.advice {
-     margin: 10px 0pt 40px;
+     margin: 10px 0pt 25px;
 }
 
 #sidebar h3.taxonomy-root {
@@ -362,7 +361,7 @@ div#sidebar {
 
 #sidebar h3.taxonomy-root a {
      color: #333333;
-     font-family: Helvetica,Verdana,Arial,serif;
+     font-family: Verdana,Arial,Helvetica,serif;
      text-decoration: none;
 }
 
@@ -408,6 +407,30 @@ body.two-col div#content {
      width: 640px;
 }
 
+body.one-col div#content {
+    margin-left: 20px;
+}
+
+#content div.description {
+     margin-bottom: 20px;
+}
+
+#content div#breadcrumbs {
+     margin-bottom: 5px;
+}
+
+h2 a.breadcrumbs {
+     text-decoration: none;
+}
+
+div.taxon h2 {
+     font-size: 25px;
+}
+
+#content .description {
+     margin-bottom: 20px;
+}
+
 div#footer {
      border-top: 1px solid #000000;
      clear: both;
@@ -426,7 +449,7 @@ ul#products li {
      background: none repeat scroll 0pt 0pt #FEFFF7;
      border: 1px solid #AADDAA;
      float: left;
-     margin: 10px 20px 20px 5px;
+     margin: 10px 20px 20px 0px;
      min-height: 110px;
      padding: 8px;
      width: 275px;
@@ -469,11 +492,7 @@ div#product-images div#main-image {
 div#product-description {
      float: left;
      font-size: 16px;
-     width: 420px;
-}
-
-div#products {
-    
+     width: 390px;
 }
 
 div#cart-form {
@@ -568,7 +587,15 @@ div#subtotal div.links a#checkout-link:hover {
 div#taxon-crumbs {
      clear: both;
      float: left;
-     margin-top: 35px;
+     margin: 15px 0pt 35px 262px;
+}
+
+#taxon-crumbs h3 {
+    margin: 0 0 10px 0;
+}
+
+#taxon-crumbs ul#similar_items_by_taxon {
+    margin-left:12px;
 }
 
 select#taxon {
