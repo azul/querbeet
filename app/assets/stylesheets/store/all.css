@@ -288,7 +288,7 @@ body {
 div#superwrapper {
      background-color: #FFFFFF;
      margin: 20px auto;
-     padding: 0pt 0pt 1px 20px;
+     padding: 0pt 0pt 18px 20px;
      width: 960px;
 }
 
@@ -332,6 +332,10 @@ div#header ul#nav-bar li {
 }
 
 #header ul li.current_page_item > a, #header ul li.current-menu-ancestor > a, #header ul li.current-menu-item > a, #header ul li.current-menu-parent > a {
+     color: #D8222A;
+}
+
+#header ul li.current_page_item > a:hover, #header ul li.current-menu-ancestor > a:hover, #header ul li.current-menu-item > a:hover, #header ul li.current-menu-parent > a:hover {
      color: #006436;
 }
 
@@ -339,6 +343,11 @@ div#header ul#nav-bar li {
      color: #000000;
      display: block;
      line-height: 38px;
+     text-decoration: none;
+}
+
+#header a:hover {
+     color: #006436;
      text-decoration: none;
 }
 
@@ -351,7 +360,8 @@ div#sidebar {
 }
 
 #sidebar div.advice {
-     margin: 10px 0pt 25px;
+     font-size: 16px;
+     margin: 10px 15px 25px 0pt;
 }
 
 #sidebar h3.taxonomy-root {
@@ -408,7 +418,7 @@ body.two-col div#content {
 }
 
 body.one-col div#content {
-    margin-left: 20px;
+     margin-left: 20px;
 }
 
 #content div.description {
@@ -436,8 +446,33 @@ div#footer {
      clear: both;
      font-size: 12px;
      font-style: italic;
-     padding: 17px 0pt 0pt;
+     padding: 18px 0pt;
      width: 940px;
+}
+
+div#footer-left {
+     background: url("/assets/store/qbl_50x18.png") no-repeat scroll left center transparent;
+     color: #333333;
+     float: left;
+     font-family: Verdana,Arial,Helvetica,sans-serif;
+     font-size: 12px;
+     font-style: italic;
+     line-height: 16px;
+     padding-left: 55px;
+}
+
+div#footer-left a {
+     color: #D8222A;
+     text-decoration: none;
+}
+
+div#footer-right {
+     float: right;
+     font-style: italic;
+}
+
+div#footer-right a {
+     color: #333333;
 }
 
 ul#products {
@@ -591,11 +626,11 @@ div#taxon-crumbs {
 }
 
 #taxon-crumbs h3 {
-    margin: 0 0 10px 0;
+     margin: 0pt 0pt 10px;
 }
 
 #taxon-crumbs ul#similar_items_by_taxon {
-    margin-left:12px;
+     margin-left: 12px;
 }
 
 select#taxon {
@@ -654,6 +689,7 @@ fieldset legend {
 }
 
 fieldset#payment ul#payment-methods {
+     display: none;
      list-style-type: none;
 }
 
