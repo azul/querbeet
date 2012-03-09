@@ -1,0 +1,108 @@
+/* @override http://localhost:3000/stylesheets/admin/html-invoice.css */
+
+div.a4 {
+  width: 620px;
+  font-size: 12px;
+  font-family: helvetica, verdana, serif;
+
+}
+div.header {
+  width: 620px;
+  height: 150px;	
+}
+div.address {
+  width: 620px;
+  border-top:1px solid grey;
+  margin-bottom: 10px;
+  padding: 6px;
+
+}
+.line_items {
+  width: 620px;
+}
+div.wrapper {
+  width: 620px;
+  height: 540px;
+  border-top:1px solid grey;
+  padding: 6px;
+
+}
+
+div.thanks {
+  width: 620px;
+  margin-top: 20px;
+}
+div.spacer {
+  width: 620px;
+}
+div.totals {
+  height: 100px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+.totals .cell {
+  width: 130px;
+}
+
+div.footer {
+  width: 620px;
+  border-top:1px solid grey;
+  padding: 6px;
+}
+
+.footer .bold {
+  width: 100px;
+}
+.footer .cell {
+  width: 220px;
+}
+
+
+.title { font-weight: bold; color: #FF9933; font-size: 18px; }
+.bold { font-weight: bold; }
+.price { width: 55px ; }
+
+table.address{
+  width: 620px;
+}
+table.index th {
+  background: #cdcdcd top left repeat-x;
+  padding: 7px 10px;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  text-shadow: #efefef 1px 1px 0px; }
+  table.index th .right {
+    float:right;
+    font-weight:normal;
+  }
+  table.index th.id-col {
+    text-align: center; }
+  table.index td {
+    border-bottom:1px solid #ddd;
+    padding: 3px 10px;
+  }
+  table.index td.lbl-col {
+    width: 12%; }
+   table.index td.val-col {
+    width: 38%; }
+table.index tr.alt td {
+  background-color: #efefef; }
+table.index.green th {
+  background: #cfefa7 top left repeat-x;
+  border-left: 1px solid #E4FDB4;
+  border-top: 1px solid #E4FDB4;
+  border-right: 1px solid #B7CB90;
+  border-bottom: 1px solid #B7CB90; }
+table.index.green td {
+  background-color: #efe; }
+table.index.order-summary {
+  clear: both; }
+    table.index.order-summary tr.totals th {
+      background: transparent;
+      text-align: right;
+      border: none; }
+  table.index td.actions {text-align:right;}
+
