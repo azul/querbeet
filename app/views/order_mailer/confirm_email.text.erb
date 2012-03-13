@@ -1,0 +1,31 @@
+Guten Tag,
+
+ 
+
+vielen Dank für Ihre Pflanzenbestellung. Der Versand findet zur Pflanzzeit ab
+Ende April und im Mai statt. Zeitgleich mit der Zusendung der Pflanzen wird
+eine Rechnung versandt. Bitte geben Sie uns Bescheid, wenn Sie in diesem
+Zeitraum mehr als zwei Tage abwesend sind. Wie passen den Versand daran an.
+
+Ihre Bestellung im Überblick:
+
+============================================================
+<% for item in @order.line_items %>
+<%=item.variant.sku %> <%=item.variant.product.name%> <%= item.variant.options_text -%> <%=item.quantity%> Stück a <%= number_to_currency item.price %> = <%= number_to_currency(item.price * item.quantity) %>
+<% end %>
+============================================================
+Warenwert: <%= number_to_currency @order.item_total %>
+<% @order.adjustments.each do |adjustment| %>
+<%= "#{adjustment.label}: #{number_to_currency adjustment.amount}"%>
+<% end %>
+Summe: <%= number_to_currency @order.total %>
+
+
+Pflanzen sind lebendig. Bitte denken Sie daran, sie sofort nach Erhalt
+auszupacken. Bei Nachfragen geben Sie bitte oben stehende Bestellnummer an.
+
+
+Mit freundlichem Gruß
+
+Das Querbeet-Jungpflanzen-Kollektiv
+
