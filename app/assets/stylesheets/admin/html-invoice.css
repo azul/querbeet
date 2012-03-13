@@ -28,6 +28,7 @@ div.wrapper {
 }
 
 div.thanks {
+  clear: both;
   width: 620px;
   margin-top: 20px;
 }
