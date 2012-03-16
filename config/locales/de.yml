@@ -272,6 +272,7 @@ de:
         special_instructions: "Spezielle Anmerkungen"
         state: Bundesland
         total: Gesamt
+        terms_of_service: AGB
       product: 
         available_on: "Erhältlich ab"
         cost_price: "Einkaufspreis"
