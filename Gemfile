@@ -7,6 +7,7 @@ gem 'rails', '3.1.2'
 
 group :production do
   gem 'mysql2'
+  gem "therubyracer", :require => 'v8'
 end
 
 gem 'json'
