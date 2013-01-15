@@ -506,7 +506,7 @@ ul#products li img {
      margin: auto;
      max-height: 100px;
      padding: 4px;
-     width: 100px;
+     max-width: 100px;
 }
 
 ul#products li span.price {
